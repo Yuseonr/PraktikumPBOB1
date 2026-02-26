@@ -61,5 +61,20 @@ public class MGaris {
         G5.printPersamaanGaris(); // Mencetak persamaan garis G5 (horizontal)
 
         System.out.println("\nJumlah objek Garis: " + Garis.getCounterGaris()); // Mencetak jumlah objek Garis yang telah dibuat
+
+        // Percobaan pemanggilan attribute manual
+        // System.out.println("Titik awal G1: ");
+        // G1.tAwal.printTitik();
+        // System.out.println("Titik akhir G1: ");
+        // G1.tAkhir.printTitik();
+
+        /*
+        java -cp bin MGaris
+        Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+        The field Garis.tAwal is not visible
+        The field Garis.tAkhir is not visible
+        at MGaris.main(MGaris.java:67)
+        */
+
     }
 }

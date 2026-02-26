@@ -55,5 +55,18 @@ public class MTitik {
         T4.printTitik();
         System.out.println("Jumlah objek Titik: " + Titik.getCounterTitik()); // Mencetak jumlah objek Titik yang telah dibuat
 
+        // Percobaan pemanggilan attribute manual
+        // System.out.println("\nPercobaan pemanggilan attribute manual:");
+        // System.out.println("Absis T2: " + T2.absis);
+        // System.out.println("Ordinat T2: " + T2.ordinat);
+
+        /*
+        Pertemuan2 % java -cp bin MTitik      
+        Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+        The field Titik.absis is not visible
+        The field Titik.ordinat is not visible
+        at MTitik.main(MTitik.java:60) 
+        */
+
     }
 }

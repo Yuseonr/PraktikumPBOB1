@@ -8,57 +8,57 @@ Last update  : 25 Feb 2025
 
 public class Garis {
     /************** Atribute **************/
-    Titik tAwal;
-    Titik tAkhir;
-    static int counterGaris = 0;
+    private Titik tAwal;
+    private Titik tAkhir;
+    private static int counterGaris = 0;
 
     /************** METHODE **************/
     // Konstruktor untuk membuat garis dengan titik awal (0,0) dan titik akhir (1,1)
-    Garis(){
+    public Garis(){
         this.tAwal = new Titik(0,0);
         this.tAkhir = new Titik(1,1);
         counterGaris++;
     }
 
     // Konstruktor untuk membuat garis dengan titik awal dan titik akhir sebgaai parameter
-    Garis(Titik tAwal, Titik tAkhir){
+    public Garis(Titik tAwal, Titik tAkhir){
         this.tAwal = tAwal;
         this.tAkhir = tAkhir;
         counterGaris++;
     }
 
     // Mengembalikan counter garis
-    static int getCounterGaris() {
+    public static int getCounterGaris() {
         return counterGaris;
     }
 
     // Mengembalikan titik awal
-    Titik getTitikAwal(){
+    public Titik getTitikAwal(){
         return tAwal;
     }
 
     // Mengembalikan titik akhir
-    Titik getTitikAkhir(){
+    public Titik getTitikAkhir(){
         return tAkhir;
     }
 
     // Mengeset nilai titik Awal dengan titik baru
-    void setTitikAwal(Titik tAwal){
+    public void setTitikAwal(Titik tAwal){
         this.tAwal = tAwal;
     }
 
     // Mengeset nilai titik Akhir dengan titik baru
-    void setTitikAkhir(Titik tAkhir){
+    public void setTitikAkhir(Titik tAkhir){
         this.tAkhir = tAkhir;
     }
 
     // Menghitung panjang garis
-    double getPanjang(){
+    public double getPanjang(){
         return Math.sqrt(Math.pow(tAkhir.getAbsis() - tAwal.getAbsis(), 2) + Math.pow(tAkhir.getOrdinat() - tAwal.getOrdinat(), 2));
     }
 
     // Menghitung gradien garis
-    double getGradien(){
+    public double getGradien(){
         if (tAkhir.getAbsis() - tAwal.getAbsis() == 0) {
             System.out.println("Gradien tidak terdefinisi");
             return 0;
@@ -115,12 +115,12 @@ public class Garis {
     }
 
     // Mencetak koordinat titik awal dan titik akhir garis dengan format "Garis : (x1,y1) - (x2,y2)"
-    void printGaris() {
+    public void printGaris() {
         System.out.print("Garis : "+"(" + tAwal.getAbsis() + "," + tAwal.getOrdinat() + ") - " + "(" + tAkhir.getAbsis() + "," + tAkhir.getOrdinat() + ")\n");
     }
 
     // Methode untuk menampilkan persamaan garis dalam bentuk "y = mx + c"
-    void printPersamaanGaris() {
+    public void printPersamaanGaris() {
         if (this.isVertikal()) {
             System.out.println("x = " + tAwal.getAbsis());
         } else if (this.isHorizontal()) {

@@ -8,20 +8,20 @@ Last update  : 26 Feb 2025
 
 public class Titik {
     /************** Atribute **************/
-    double absis;
-    double ordinat;
-    static int counterTitik = 0; 
+    private double absis;
+    private double ordinat;
+    private static int counterTitik = 0; 
 
     /************** METHODE **************/
     // Konstruktor untuk membuat titik (0,0)
-    Titik() {
+    public Titik() {
         absis = 0;
         ordinat = 0;
         counterTitik++;
     }
 
     // Konstruktor untuk membuat titik dengan absis dan ordinat tertentu
-    Titik(double x, double y) {
+    public Titik(double x, double y) {
         absis = x;
         ordinat = y;
         counterTitik++;
@@ -33,33 +33,33 @@ public class Titik {
     }
 
     // Mengembalikan nilai absis
-    double getAbsis() {
+    public double getAbsis() {
         return absis;
     }
 
     // Mengembalikan nilai ordinat
-    double getOrdinat() {
+    public double getOrdinat() {
         return ordinat;
     }
 
     // Mengeset nilai absis dengan nilai baru x
-    void setAbsis(double x) {
+    public void setAbsis(double x) {
         absis = x;
     }
 
     // Mengeset nilai ordinat dengan nilai baru y
-    void setOrdinat(double y) {
+    public void setOrdinat(double y) {
         ordinat = y;
     }
 
     // Mengeser nilai absis dan ordinat titik masing masing sejauh x dan y
-    void geser(double x, double y) {
+    public void geser(double x, double y) {
         absis += x;
         ordinat += y;
     }
 
     // Mencari kuadran posisi titik
-    int getKuadran() {
+    public int getKuadran() {
         if (absis > 0 && ordinat > 0) {
             return 1; // Kuadran I
         } else if (absis < 0 && ordinat > 0) {
@@ -74,24 +74,24 @@ public class Titik {
     } 
 
     // Mencari jarak titik dari titik pusat (0,0)
-    double getJarakPusat() {
+    public double getJarakPusat() {
         return Math.sqrt(Math.pow(absis, 2) + Math.pow(ordinat, 2));
     }
 
     // Mencari jarak titik dari titik lain
-    double getJarak(Titik T2){
+    public double getJarak(Titik T2){
         double deltaAbsis = Math.abs(this.absis - T2.getAbsis());
         double deltaOrdinat = Math.abs(this.ordinat - T2.getOrdinat());
         return Math.sqrt(Math.pow(deltaAbsis, 2) + Math.pow(deltaOrdinat, 2));
     }
 
     // merefleksi titik sekarang terhadap sumbu X 
-    void refleksiX() {
+    public void refleksiX() {
         this.ordinat = -this.ordinat;
     }
 
     // merefleksi titik sekarang terhadap sumbu Y
-    void refleksiY() {
+    public void refleksiY() {
         this.absis = -this.absis;
     }
 
@@ -108,7 +108,7 @@ public class Titik {
     }
 
     // Mencetak koordinat titik
-    void printTitik() {
+    public void printTitik() {
         System.out.println("(" + absis + "," + ordinat + ")");
     }
 
