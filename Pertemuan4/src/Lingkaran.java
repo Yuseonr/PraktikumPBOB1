@@ -3,10 +3,10 @@ Nama file    : Lingkaran.java
 Deskripsi    : Berisi Atribute dan Method dalam class Lingkaran
 Pembuat      : Rafi Anandra Dharmawan - 24060124130071
 Tanggal      : 11 Mar 2025
-Last update  : 11 Mar 2025
+Last update  : 12 Mar 2025
 */
 
-public class Lingkaran extends BangunDatar {
+final public class Lingkaran extends BangunDatar {
     /************** Atribute **************/
     private double jari;
 

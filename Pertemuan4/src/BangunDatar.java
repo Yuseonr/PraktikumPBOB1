@@ -3,7 +3,7 @@ Nama file    : BangunDatar.java
 Deskripsi    : Berisi Atribute dan Method dalam class BangunDatar
 Pembuat      : Rafi Anandra Dharmawan - 24060124130071
 Tanggal      : 11 Mar 2025
-Last update  : 11 Mar 2025
+Last update  : 12 Mar 2025
 */
 
 public class BangunDatar {
@@ -27,7 +27,7 @@ public class BangunDatar {
     }
 
     // Menampilkan jumlah BangunDatar yang telah dibuat
-    public static void showCounterBangunDatar() {
+    public static void printCounterBangunDatar() {
         System.out.println("Jumlah Objek BangunDatar : " + counterBangunDatar);
     }
 
