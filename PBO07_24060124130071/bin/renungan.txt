@@ -1,0 +1,6 @@
+Renungan : Simpulkan bagaimana cara kerja Polimorfisme sesuai kalimat Anda sendiri!
+Laporkan hasil kerja Anda sesuai petunjuk Asisten!
+
+Polimorfisme adalah konsep / cara kita dapat menggunakan methode yang memiliki signature yang sama namun menghasilkan output berbeda tergantung dari underlaying class(instanceof apa).
+Hal ini membuat kita dapat menormalisasi / menyamaratakan cara mendapatkan, memanipulasi, ataupun menampilkan data dari sumber yang berbeda.
+Selain itu konsep polimorfisme juga bisa dilakukan pada class yang sama dengan Nama methode sama tapi parameter berbeda, hal ini membuat methode tersebut lebih flexible dalam menghadapi input
