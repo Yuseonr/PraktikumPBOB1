@@ -1,0 +1,7 @@
+Simpulkan bagaimana cara kerja konsep Generik sesuai kalimat Anda sendiri!
+
+Generik merupakan cara kita untuk menghindari DRY (Don't Repeat Yourself) dengan membuat kelas atau metode yang dapat bekerja dengan berbagai tipe data. 
+Dengan menggunakan generik, kita bisa menulis kode yang lebih fleksibel dan dapat digunakan kembali tanpa harus menulis ulang untuk setiap tipe data yang berbeda.
+Misalnya, kita bisa membuat kelas Data<T> yang dapat menyimpan elemen dengan tipe T apa pun, seperti Integer, String, atau bahkan objek Anabul.
+Dengan generik, kita bisa memastikan bahwa tipe data yang digunakan konsisten dan aman, karena kita bisa menentukan tipe data saat membuat objek Data, sehingga mengurangi risiko kesalahan tipe data saat runtime.
+Generik juga memungkinkan kita untuk memanfaatkan polimorfisme, karena kita bisa menggunakan metode yang sama untuk berbagai tipe data yang berbeda, asalkan mereka memenuhi batasan tipe yang ditentukan.
