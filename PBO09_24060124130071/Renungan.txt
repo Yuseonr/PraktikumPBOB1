@@ -1,0 +1,6 @@
+Simpulkan bagaimana cara kerja konsep Koleksi sesuai kalimat Anda sendiri!
+Laporkan hasil kerja Anda sesuai petunjuk Asisten!
+
+Koleksi merupakan cara untuk menyimpan dan mengelola data dengan jumlah yang lebih dari satu 
+hal ini sangat berguna untuk menyimpan data yang dinamis, seperti daftar teman atau daftarpiaraan. 
+Dalam konsep koleksi, kita dapat menggunakan berbagai jenis struktur data seperti arraylist untuk menyimpan nama teman-teman, dan queue untuk menyimpan data anabul. 
