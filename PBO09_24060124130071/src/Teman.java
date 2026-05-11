@@ -53,7 +53,7 @@ public class Teman {
     // Methode isMember untuk mengecek apakah nama tertentu ada dalam list
     public boolean isMember(String nama) {
         for (String s : Lnama) {
-            if (s == nama) {
+            if (s.equals(nama)) {
                 return true;
             }
         }
@@ -68,11 +68,11 @@ public class Teman {
         }
     }
 
-    // methode gantiNama untuk mengganti nama pada index tertentu dengan nama baru
+    // methode gantiNama untuk mengganti nama lama tertentu dengan nama baru
     public void gantiNama(String namaLama, String namaBaru) {
-        if (isMember(namaBaru)) {
+        if (isMember(namaLama)) {
             for (int i = 0; i < getNbelm(); i++) {
-                if (getNama(i) == namaLama) {
+                if (getNama(i).equals(namaLama)) {
                     setNama(i, namaBaru);
                 }
             }
@@ -84,7 +84,7 @@ public class Teman {
         int count = 0;
         if (isMember(nama)) {
             for (String a : Lnama) {
-                if (a == nama) {
+                if (a.equals(nama)) {
                     count = count + 1;
                 }
             }

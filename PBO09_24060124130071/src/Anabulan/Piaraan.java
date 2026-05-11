@@ -47,16 +47,23 @@ public class Piaraan {
     // Methode getAnabul untuk menggambil data anabul dalam list
     // data pertama adalah index 0
     public Anabul getAnabul(){
-        return Lanabul.get(0);
-    }
-
-    // dequeue method untuk menghapus data anabul pertama dalam list
-    public void dequeueAnabul(){
-        if (getNbelm() > 0){
-            Lanabul.remove(0);
-            nbelm = nbelm - 1;
+        if (getNbelm() > 0) {
+            return Lanabul.get(0);
         } else {
             System.out.println("Piaraan kosong");
+            return null;
+        }
+    }
+
+    // dequeue method untuk menghapus dan mengembalikan data anabul pertama dalam list
+    public Anabul dequeueAnabul(){
+        if (getNbelm() > 0){
+            Anabul first = Lanabul.remove(0);
+            nbelm = nbelm - 1;
+            return first;
+        } else {
+            System.out.println("Piaraan kosong");
+            return null;
         }
     }
 
